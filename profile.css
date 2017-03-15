@@ -1,0 +1,233 @@
+@import 'https://fonts.googleapis.com/css?family=Bree+Serif';
+
+html, body{
+  position: absolute;
+  left:0;right:0;top:0;bottom:0;
+  width:100%;height:100%;
+  overflow: hidden;
+  margin:0;
+  background-image:url("images/background.jpg");
+  background-size: cover;
+  font-family: 'Bree Serif', serif;
+}
+
+a{
+  color: #e14fe0;
+  text-decoration: none;
+}
+
+.center-section-container{
+  max-height:900px;max-width:900px;
+  position: absolute;
+  left:0;right:0;bottom:0;top:30px;
+  margin:auto;
+}
+
+.center-section-container > h1 {
+  position: absolute;
+  color:white;
+  top: -16px; left:50px;
+}
+
+/* General Section Styles */
+.section{
+
+}
+
+/* Image Section */
+.image-section{
+  position:absolute;
+  left:50px;top:50px;
+  max-height: 40%;
+  max-width: calc(100% - 50px - 300px);
+  overflow: hidden;
+}
+
+.image-section > img{
+  max-width: 100%;max-height: 100%;
+}
+
+/* About Me Section */
+.about-me-section{
+  position: absolute;
+  right:50px;top:50px;
+  height: 44%;
+  width: 225px;
+  background: rgba(0,0,0,0.75);
+  border-radius: 10px;
+  border:none;
+  color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.about-me-tab{
+  display: none;
+}
+
+.about-me-tab h3{
+  margin-top: 0;
+}
+.about-me-tab ul{
+  /*margin-top: 60px;*/
+  width:85%;
+}
+
+.about-me-section .highlighter{
+  width:116px;
+  background:#a922ac;
+}
+
+.about-me-section h4{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.about-me-section ul{
+  margin-right: 16px;
+  padding-left: 16px;
+  margin-top: 16px;
+  list-style: none;
+}
+.about-me-section li{
+  margin-bottom:8px;
+}
+
+.about-me-section .scroller{
+  margin-top: 46px;
+}
+
+/* Tabs Section */
+.tabs-container{
+  position: absolute;
+  left: 50px;bottom:50px;right:50px;
+  height: calc(100% - 100px - 400px);
+}
+
+
+/* Professional History */
+
+.prof-history .resume-section{
+  margin-left:32px;
+}
+.prof-history .scroller{
+  margin-top:16px;
+  margin-bottom: 16px;
+}
+.resume h3{
+  text-decoration: underline;
+  margin-top: 32px;
+  margin-left: 16px;
+}
+.resume h3:first-child{
+  margin-top:0;
+}
+.resume-section h4{
+  margin-bottom:0;
+}
+.resume-section p {
+  margin: 0;
+}
+.resume-section ul{
+  margin:0;
+}
+.resume-section .position{
+  font-style: italic;
+}
+
+/* Who am I? */
+.who-am-i p{
+  margin:16px;
+}
+.who-am-i h4{
+  margin: 16px;
+}
+
+
+/* Offers */
+.offers ul, .offers h4{
+  margin: 16px;
+}
+
+
+/* Tabs */
+.tabs-section{
+  position: relative;
+  min-height: 85%;
+  clear: both;
+}
+.tab{
+  float:left;
+  width: calc((100% - 50px - 200px)/3);
+}
+
+
+
+.tab label{
+  display: inline-block;
+  background: #000;
+  padding: 10px 0;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;top: -52px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  border-left: 1px solid white;
+  cursor: pointer;
+}
+
+.tab:nth-child(1) > label{
+  border: 0px;
+}
+
+.tab [type=radio]{
+  display: none;
+}
+
+.content{
+  position: absolute;
+  top: 28px;left:0;right:0;bottom:20px;
+  background: rgba(0,0,0,0.75);
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px;
+  height:100%;
+  display:none;
+  overflow: hidden;
+}
+
+.scroller{
+  position: absolute;
+  left:0;right:-20px;top:0;bottom:0;
+  overflow-y: auto;
+}
+
+[type=radio]:checked ~ label ~ .content{
+  z-index: 1;
+  display: inline;
+}
+[type=radio]:checked ~ label {
+  background: #a922ac;
+}
+
+@media (max-width:720px) {
+  .about-me-section{
+    display: none;
+  }
+
+  .about-me-tab{
+    display: inline;
+  }
+
+  .tab{
+    width: 25%;
+  }
+
+  .image-section{
+    max-width: calc(100% - 100px);
+  }
+
+}
