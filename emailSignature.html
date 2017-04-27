@@ -5,10 +5,9 @@
   <style type="text/css">
     @font-face {
       font-family: 'oranienbaum';
-      src: url('oranienbaumFont/Oranienbaum.ttf') format('truetype');
+      src: url('https://raw.githubusercontent.com/DaynaLacoursiere/daynalacoursiere.github.io/master/oranienbaumFont/Oranienbaum.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
-
   }
     img{
       max-width: 200px;
@@ -19,7 +18,7 @@
     .profile_picture img{
       position: relative;
       float: left;
-      max-width: 100px;
+      max-width: 60px;
       padding: 16px;
       border-radius: 100%;
     }
@@ -27,34 +26,37 @@
       position: relative;
       float: left;
       width: 2px;
-      height:132px;
+      height:90px;
       background-color: #8b289f; 
+      margin-top: 8px;
     }
     .signature_text{
       position: relative;
       float: left;
-      margin: 9px 16px;
+      /*margin: 9px 16px;*/
       font-family: "oranienbaum", Verdana, Geneva, sans-serif;
     }
     .signature_text .name{
-      font-size: 18pt;
+      font-size: 14pt;
       font-weight: bold;
-    }
-    .signature_text .subheading{
-      
+      color: #8b289f;
     }
     .signature_text :not(.name){
       color: #4D4D4D;
-      font-size: 14pt;
+      font-size: 10pt;
+    }
+    .signature_text .subheading{
+      color: black;
+      font-weight: bold;
     }
     .signature_text .columns .phone{
       float: left;
     }
     .signature_text .columns .vertical_line {
       float: left;
-      height: 19px;
+      height: 14px;
       width: 2px;
-      margin: 0 8px;
+      margin: 0 4px;
     }
     .signature_text .columns .profile{
       float: left;
@@ -69,25 +71,23 @@
       float: left;
       margin-top: 2px;
     }
+    .profile a:hover, .email a:hover{
+      color: #8b289f;
+    }
   </style>
 </head>
 <body>
   <div class="signature">
-    <div class="profile_picture">
-      <img src="images\pixel_pic.png">
-    </div>
-    <div class="vertical_line"></div>
     <div class="signature_text">
       <div class="name">Dayna Lacoursiere</div>
       <div class="subheading">Web Developer</div>
-      <div class="columns">
-        <div class="phone">780.686.8834</div>
-        <div class="vertical_line"></div>
-        <div class="profile"><a href="http://daynalacoursiere.github.io/">Profile</a></div>
-      </div>
-      <div class="email"><a href="mailto:daynalacoursiere@gmail.com">daynalacoursiere@gmail.com</a></div>
+      <div class="phone">780.686.8834</div>
+      <div class="profile"><a href="http://daynalacoursiere.github.io/">http://daynalacoursiere.github.io/</a></div>
+      
       <div class="linked_in">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png">
+        <a href="https://www.linkedin.com/in/dayna-lacoursiere-07868794/">
+          https://www.linkedin.com/in/dayna-lacoursiere-07868794/
+        </a>
       </div>
     </div>
   </div>
