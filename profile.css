@@ -226,8 +226,28 @@ a{
 
 .scroller{
   position: absolute;
-  left:0;right:-20px;top:0;bottom:0;
+  left:0;right:0;top:0;bottom:0;
   overflow-y: auto;
+}
+
+.scroller::-webkit-scrollbar{
+  background:transparent;
+  width:8px;
+  height:8px;
+}
+
+.scroller::-webkit-scrollbar-thumb{
+  background: #b4b4b4;
+  border-radius: 10px;
+}
+
+.scroller::-webkit-scrollbar-track{
+  background:transparent;
+  margin:8px;
+}
+
+.scroller::-webkit-scrollbar-corner{
+  background:transparent;
 }
 
 [type=radio]:checked ~ label ~ .content{
