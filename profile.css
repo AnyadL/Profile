@@ -146,11 +146,36 @@ a{
 }
 
 
-/* Offers */
-.offers ul, .offers h4{
-  margin: 16px;
+/* Projects */
+.projects .scroller div{
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  margin-top:32px;
 }
 
+.projects h4, .projects h3{
+  margin: 16px;
+  text-align: center;
+}
+.projects h3{
+  margin-top: 32px;
+}
+
+.projects img, .projects iframe{
+  width:100%;
+  display: block;
+  margin: 16px auto;
+  border-radius: 10px;
+  border: 0px;
+}
+.projects img.small{
+  max-width: 300px;
+}
+.projects p{
+  width: 100%;
+  text-align: center;
+}
 
 /* Tabs */
 .tabs-section{
