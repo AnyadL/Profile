@@ -17,16 +17,15 @@ a{
 }
 
 .center-section-container{
-  max-height:900px;max-width:900px;
   position: absolute;
-  left:0;right:0;bottom:0;top:30px;
+  left:16px;right:16px;bottom:16px;top:30px;
   margin:auto;
 }
 
 .center-section-container > h1 {
   position: absolute;
   color:white;
-  top: -16px; left:50px;
+  top: -16px; left:25px;
 }
 
 /* General Section Styles */
@@ -34,24 +33,10 @@ a{
 
 }
 
-/* Image Section */
-.image-section{
-  position:absolute;
-  left:50px;top:50px;
-  max-height: 40%;
-  max-width: calc(100% - 50px - 300px);
-  overflow: hidden;
-}
-
-.image-section > img{
-  max-width: 100%;max-height: 100%;
-}
-
 /* About Me Section */
 .about-me-section{
   position: absolute;
-  right:50px;top:50px;
-  height: 44%;
+  right:50px;top:76px;bottom:45px;
   width: 225px;
   background: rgba(0,0,0,0.75);
   border-radius: 10px;
@@ -74,8 +59,9 @@ a{
 }
 
 .about-me-section .highlighter{
-  width:116px;
+  width:146px;
   background:#a922ac;
+  font-size: x-large;
 }
 
 .about-me-section h4{
@@ -84,6 +70,7 @@ a{
   margin-left: 16px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-weight: normal;
 }
 .about-me-section ul{
   margin-right: 16px;
@@ -96,14 +83,15 @@ a{
 }
 
 .about-me-section .scroller{
-  margin-top: 46px;
+  margin-top: 73px;
+  font-size: large;
 }
 
 /* Tabs Section */
 .tabs-container{
   position: absolute;
-  left: 50px;bottom:50px;right:50px;
-  height: calc(100% - 100px - 400px);
+  left:25px;bottom:25px;top:100px;right:325px;
+  font-size: large;
 }
 
 
@@ -144,12 +132,16 @@ a{
 .who-am-i h4{
   margin: 16px;
 }
-
+.who-am-i .image-section{
+  max-width: 340px;
+}
+.who-am-i .image-section > img{
+  max-width: 100%; max-height: 100%;
+}
 
 /* Projects */
 .projects .scroller div{
   width: 90%;
-  max-width: 500px;
   margin: auto;
   margin-top:32px;
 }
@@ -163,7 +155,7 @@ a{
 }
 
 .projects img, .projects iframe{
-  width:100%;
+  width:75%;
   display: block;
   margin: 16px auto;
   border-radius: 10px;
@@ -179,16 +171,13 @@ a{
 
 /* Tabs */
 .tabs-section{
-  position: relative;
-  min-height: 85%;
-  clear: both;
+  position: absolute;
+  left:0;right:0;top:0;bottom:0;
 }
 .tab{
   float:left;
-  width: calc((100% - 50px - 200px)/3);
+  width: 33.333%;
 }
-
-
 
 .tab label{
   display: inline-block;
@@ -196,16 +185,21 @@ a{
   padding: 10px 0;
   margin-left: -1px;
   position: relative;
-  left: 1px;top: -52px;
+  left: 1px;top: -25px;
   width: 100%;
   color: #fff;
   text-align: center;
   border-left: 1px solid white;
   cursor: pointer;
+  font-size: x-large;
 }
 
 .tab:nth-child(1) > label{
   border: 0px;
+  border-top-left-radius: 10px;
+}
+.tab:nth-child(3) > label{
+  border-top-right-radius: 10px;
 }
 
 .tab [type=radio]{
@@ -216,10 +210,10 @@ a{
   position: absolute;
   top: 28px;left:0;right:0;bottom:20px;
   background: rgba(0,0,0,0.75);
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   color: #fff;
   padding: 20px;
-  height:100%;
   display:none;
   overflow: hidden;
 }
@@ -267,6 +261,10 @@ a{
     display: inline;
   }
 
+  .tabs-container{
+    right:50px;
+  }
+
   .tab{
     width: 25%;
   }
@@ -274,5 +272,10 @@ a{
   .image-section{
     max-width: calc(100% - 100px);
   }
-
+  .tab:nth-child(3) > label{
+    border-top-right-radius: 0px;
+  }
+  .tab:nth-child(4) > label{
+    border-top-right-radius: 10px;
+  }
 }
