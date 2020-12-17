@@ -16,6 +16,13 @@ a{
   text-decoration: none;
 }
 
+::selection {
+  background: #a922ac; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #a922ac; /* Gecko Browsers */
+}
+
 .center-section-container{
   position: absolute;
   left:16px;right:16px;bottom:16px;top:30px;
@@ -24,13 +31,24 @@ a{
 
 .center-section-container > h1 {
   position: absolute;
-  color:white;
+  color:#eee;
   top: -16px; left:25px;
 }
 
 /* General Section Styles */
 .section{
 
+}
+
+.column{
+  float: left;
+  max-width: 33%;
+}
+
+.columns:after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* About Me Section */
@@ -146,7 +164,7 @@ a{
   margin-top:32px;
 }
 
-.projects h4, .projects h3{
+.projects h4, .projects h3, .projects h2{
   margin: 16px;
   text-align: center;
 }
@@ -189,7 +207,7 @@ a{
   width: 100%;
   color: #fff;
   text-align: center;
-  border-left: 1px solid white;
+  border-left: 1px solid #eee;
   cursor: pointer;
   font-size: x-large;
 }
@@ -277,5 +295,18 @@ a{
   }
   .tab:nth-child(4) > label{
     border-top-right-radius: 10px;
+  }
+}
+
+@media (max-width:948px) {
+  .column{
+    float: none;
+    max-width: 100%;
+  }
+
+  .columns:after{
+    content: "";
+    display: inline;
+    clear: both;
   }
 }
