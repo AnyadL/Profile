@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Bree+Serif';
+/*@import 'https://fonts.googleapis.com/css?family=Bree+Serif';*/
 
 html, body{
   position: absolute;
@@ -8,7 +8,8 @@ html, body{
   margin:0;
   background-image:url("images/background.jpg");
   background-size: cover;
-  font-family: 'Bree Serif', serif;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
+  /*font-family: Andale Mono, monospace;*/
 }
 
 a{
